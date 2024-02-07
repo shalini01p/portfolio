@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Responsive portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98695ff39e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo">
+
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+
+             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>
+                Web developer
+            </p>
+            <h1>
+                Hi,I'm <span>Shalini</span> from India.
+            </h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/photo.svg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p>
+                    I am Shalini, a passionate and dedicated student currently pursuing my Bachelor's degree in Computer Science and Engineering at Dhamalakshmi Srinivasan Engineering College. My academic journey has equipped me with a solid foundation in key CSE concepts, and I am excited to delve deeper into the dynamic world of technology.</p>
+                    <div class="tab-titles">
+                        
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                       <ul>
+                           <li><span>Web development</span><br> Web App Development</li>
+                       </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>10th Qualification </li>
+                            <li><span>2021</span><br>12th Qualification</li>
+                        </ul>
+                     </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------service-------------------------->
+<div id=" skills">
+     <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-title">
+            
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>JavaScript</h2>
+                <p>Proficient in creating dynamic and interactive web applications using JavaScript.
+                </p>
+                <a href="#">Learn more</a>
+                
+            </div>
+
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                
+                <h2>CSS</h2>
+                <p>Skilled in styling web pages with CSS to create visually appealing and responsive designs.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                
+                <i class="fa-brands fa-html5"></i><h2>HTML</h2>
+
+                <p> Proficient in structuring web content using HTML to ensure accessibility and semantic markup.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-python"></i>
+
+
+                <h2>Python</h2>
+                <p>Familiar with using Python for backend development and scripting tasks.</p>
+                <a href="#">Learn more</a>
+            </div>            
+
+
+
+
+        </div>
+     </div>
+</div>
+
+
+<!-----------------portfolio-->
+<div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+        
+        <div class="work">
+            <img src="image/work1.jpg" >
+             <div class="layer">
+                <h3>Web Development</h3><br>
+             <p>Creating Portfolio as My Project at BharatIntern</p><br>
+             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+             </div>
+        </div>
+
+        <div class="work">
+            <img src="image/work2.jpg" >
+            <div class="layer">
+            <h3>Web Design</h3><br>
+             <p> Creating projects to Improving My Skills</p><br><a href="#">
+             <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             </div>
+        </div>
+       </div>
+       <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------------------Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pshalni05@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9345374427</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/shalini_hearty_soul/?igsh=ZWYwZGpkdW9rOWty"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/topics/clone"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href=""  download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                 <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+                 <span id="msg">
+                    
+
+                 </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @shalini. </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-links")
+        }
+    
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tabs")
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tabs");
+    }
+</script>  
+<script>
+    var sidemenu=document.getElementById("sideemnu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKNR2dMGppKddp8FbR3WW_kIlSpxU3V-VfPho_jFjak5YPbBQUqGO-t0mZMjnO7sSC2g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""            },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
